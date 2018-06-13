@@ -44,6 +44,7 @@
           <div class="col-md-4"></div>
           <div class="form-group col-md-4" style="margin-top:60px">
             <button type="submit" class="btn btn-success">Submit</button>
+           
           </div>
         </div>
         @if(session()->has('message'))
@@ -53,6 +54,8 @@
 @endif
       </form>
     </div>
+
+    <center> <a href = "/"> <button class="btn btn-success">Go to homepage</button></a></center>
     <script type="text/javascript">  
         $('#datepicker').datepicker({ 
             autoclose: true,   

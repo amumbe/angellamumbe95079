@@ -30,7 +30,7 @@
                 <h1>All students</h1>
                 <table class="table table-hover">
                     <tr class="success">
-                        <th>Student number</th>
+                        <th>Transaction ID</th>
                         <th>Name</th>
                         <th>Address</th>
                         <th>Total Fees</th>
@@ -43,7 +43,7 @@
                             <td>{{$student->full_name}}</td>
                             <td>{{$student->address}}</td>
                             <td>{{$student->total}}</td>
-                            <td><a href="/student_information/{{$student->id}}">View payment info</a></td
+                            <td><a href="/student_information/{{$student->id}}">View payment info</a></td>
           
                         </tr>
                     @endforeach
@@ -57,11 +57,10 @@
                         </tr>
                 </table>
             </div>
-
             <div class="col-lg-2"></div>
         </div>
     </div>
-   
+    <center> <a href = "/"> <button class="btn btn-success">Go to homepage</button></a></center>
 </body>
 </html>
 

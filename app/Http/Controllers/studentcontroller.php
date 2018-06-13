@@ -36,7 +36,7 @@ class StudentController extends Controller
     public function show_student_info($student_id){
         $student = student::find($student_id)->fees;//relationship
         $student_name = student::find($student_id)->full_name;
-        return view('angellamumbe/studentinformation',['student'=>$student,'student_name'=>$student_name,'student_number'=>$student_id]);
+        return view('angellamumbe/student_information',['student'=>$student,'student_name'=>$student_name,'student_number'=>$student_id]);
         
     }
 
@@ -53,7 +53,7 @@ class StudentController extends Controller
         $student->date_of_birth = $request->get('date_of_birth');
         $student->save();
         //return redirect('student')->with('success', 'Information has been added');
-        return redirect()->back()->with('message', 'IT WORKS!');
+        return redirect()->back()->with('message', 'New student saved.');
     }
 
     
