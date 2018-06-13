@@ -46,8 +46,11 @@
           </div>
         </div>
         @if(session()->has('message'))
-    {{session()->get('message')}}
-    @endif
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
+    
       </form>
     </div>
 

@@ -16,7 +16,8 @@ class FeesController extends Controller
         $fees->date_paid = $request->get('date_paid');
         $fees->save();
         
-        return back()->with('success', 'Information has been added');
+        //return back()->with('success', 'Information has been added');
+        return redirect()->back()->with('message', 'New fee payment added');
     } 
 
     public function index(){
