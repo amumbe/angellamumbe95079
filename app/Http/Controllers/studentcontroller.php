@@ -36,7 +36,7 @@ class StudentController extends Controller
     public function show_student_info($student_id){
         $student = student::find($student_id)->fees;//relationship
         $student_name = student::find($student_id)->full_name;
-        return view('angellamumbe/student_information',['student'=>$student,'student_name'=>$student_name,'student_id'=>$student_id]);
+        return view('angellamumbe/student_information',['student'=>$student,'student_name'=>$student_name,'student_number'=>$student_id]);
         
     }
 
