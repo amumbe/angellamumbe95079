@@ -30,7 +30,7 @@
                 <h1>All students</h1>
                 <table class="table table-hover">
                     <tr class="success">
-                        <th>Transaction ID</th>
+                        <th>Student ID</th>
                         <th>Name</th>
                         <th>Address</th>
                         <th>Total Fees</th>
