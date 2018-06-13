@@ -53,7 +53,7 @@ class StudentController extends Controller
         $student->date_of_birth = $request->get('date_of_birth');
         $student->save();
         //return redirect('student')->with('success', 'Information has been added');
-        return redirect()->back()->with('message', 'Student saved.');
+        return redirect()->back()->with('message', 'New student saved.');
     }
 
     

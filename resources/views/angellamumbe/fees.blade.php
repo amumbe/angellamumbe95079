@@ -53,6 +53,7 @@
     
       </form>
     </div>
+    <a href = "/"> <button class="btn btn-success">Go to homepage</button></a><br><br>
 
    
     <script type="text/javascript">  
