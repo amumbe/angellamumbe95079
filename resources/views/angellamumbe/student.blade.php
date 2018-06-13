@@ -46,6 +46,11 @@
             <button type="submit" class="btn btn-success">Submit</button>
           </div>
         </div>
+        @if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
       </form>
     </div>
     <script type="text/javascript">  
