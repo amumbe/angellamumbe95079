@@ -41,13 +41,13 @@ class StudentController extends Controller
     }
 
     public function search(){
-        
+
     }
 
   
     public function store(Request $request)
     {
-        $student= new \App\Student;
+        $student= new \App\student;
         $student->full_name=$request->get('full_name');
         $student->address=$request->get('address');
         $student->date_of_birth = $request->get('date_of_birth');
