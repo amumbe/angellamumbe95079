@@ -9,7 +9,7 @@ class FeesController extends Controller
     public function store(Request $request)
     {
     
-        $fees= new \App\Fees;
+        $fees= new \App\fees;
         $fees->student_id=$request->get('student_id');
         $fees->amount=$request->get('amount');
         
