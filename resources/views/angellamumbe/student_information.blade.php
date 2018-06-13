@@ -35,6 +35,7 @@
                         @endforeach
                     </table>
             </div>
+            <a href = "/"> <button class="btn btn-success">Go to homepage</button></a>
 
             <div class="col-lg-3"></div>
         </div>

@@ -57,6 +57,7 @@
                         </tr>
                 </table>
             </div>
+            <a href = "/"> <button class="btn btn-success">Go to homepage</button></a>
 
             <div class="col-lg-2"></div>
         </div>
