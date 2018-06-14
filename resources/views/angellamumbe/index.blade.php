@@ -19,10 +19,7 @@
           <input type="text" placeholder="Enter student number" name="student_number" required>
           <input type="submit" value="Search" class="btn btn-primary">
         </form><br>
-
-       
-
-        Am here
+        
 
     <br>
 <a href = "/fees"> <button class="btn btn-success">Enter new payments</button></a><br><br>
