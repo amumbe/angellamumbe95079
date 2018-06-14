@@ -13,9 +13,7 @@
 Route::get('/',function(){
     return view('angellamumbe.index');
 });
-Route::get('/student_information',function(){
-    return view('angellamumbe.student_information');
-});
+Route::get('/student_information/{id}','StudentController@show_student_info');
 Route::get('/totalfees', 'StudentController@showall');
 Route::resource('student','StudentController');
 Route::resource('fees','FeesController');
