@@ -14,11 +14,11 @@
 <body><center>
          
         <br><br><br><br><br><br><br>
-        </form method="post" action="/search">
-        {{csrf_field()}}
-        <input type="text" placeholder="Enter student number" name="student_number" required>
-           <input type="submit" value="Search" class="btn btn-primary">
-              </form><br>
+        <form method="post" action="/search">
+           {{csrf_field()}}
+          <input type="text" placeholder="Enter student number" name="student_number" required>
+          <input type="submit" value="Search" class="btn btn-primary">
+        </form><br>
 
     <br>
 <a href = "/fees"> <button class="btn btn-success">Enter new payments</button></a><br><br>

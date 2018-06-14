@@ -30,7 +30,7 @@
                                 <td>{{$students->student_number}}</td>
                                 <td>{{$students->payment_id}}</td>
                                 <td>{{$students->date_paid}}</td>
-                                <td>{{$students->amount_paid}}</td>
+                                <td>{{$students->amount}}</td>
                             </tr>
                         @endforeach
                     </table>
