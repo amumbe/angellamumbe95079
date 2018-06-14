@@ -20,6 +20,10 @@
           <input type="submit" value="Search" class="btn btn-primary">
         </form><br>
 
+        <form action="/search">
+          <input type="submit" value="search" >
+        </form>
+
     <br>
 <a href = "/fees"> <button class="btn btn-success">Enter new payments</button></a><br><br>
 <a href = "/student"> <button class="btn btn-success">Register new students</button></a><br><br>
