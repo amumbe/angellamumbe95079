@@ -39,7 +39,18 @@ class StudentController extends Controller
         return view('angellamumbe/student_information',['student'=>$student,'student_name'=>$student_name,'student_number'=>$student_id]);
     }
 
-    public function search(){
+    public function search(Request $request){
+        
+        $student_id = request('student_number');
+        
+        $student_exist = student::where('id','=',$student_id)->count();
+
+          if($student_exist > 0){
+           // return $this->show_student_info(Input::get('student_number'));
+              return $this->show_student_info($student_id);
+          }else{
+                return redirect('/')->with('error_message','The record does not exist');
+          }
 
     }
 
