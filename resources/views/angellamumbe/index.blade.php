@@ -21,7 +21,7 @@
         </form><br>
 
         <form action="/search">
-          <input type="submit" value="search" >
+          <input type="submit" value="search" class="btn btn-primary">
         </form>
 
     <br>
