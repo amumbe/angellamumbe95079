@@ -40,7 +40,7 @@
                         @foreach ($student as $students)
                             <tr>
                             
-                                <td>{{$students->payment_id}}</td>
+                                <td>{{$students->id}}</td>
                                 <td>{{$students->date_paid}}</td>
                                 <td>{{$students->amount}}</td>
                             </tr>
