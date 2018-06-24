@@ -9,5 +9,7 @@ class student extends Model
     //
     public function fees(){
         return $this->hasMany('App\fees');
+       
     }
+    public $table = 'students';
 }
