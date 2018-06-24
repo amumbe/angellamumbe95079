@@ -14,7 +14,7 @@ class Fees extends Migration
     public function up()
     {
         Schema::create('fees', function (Blueprint $table) {
-            $table->increments('payment_id');
+            $table->increments('id');
             $table->integer('student_id');
             $table->date('date_paid');
             $table->integer('amount');
